@@ -4,3 +4,5 @@
 input_data/*
 __pycache__/*
 output/*
+*/__pycache__/*
+

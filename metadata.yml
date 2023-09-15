@@ -1,0 +1,31 @@
+---
+order:
+  file_name: olist_orders_dataset.csv
+  columns: 
+  - name: order_id
+    is_in_index: True
+  - name: order_status
+    dtype: category
+  - name: order_purchase_timestamp
+    dtype: datetime
+  - name: order_approved_at
+    dtype: datetime
+  - name: order_delivered_customer_date
+    dtype: datetime
+  # 
+---
+order_item:
+  file_name: olist_order_items_dataset.csv
+  columns: 
+  - name: order_id
+    is_index: True
+  - name: order_status
+    dtype: category
+  - name: order_purchase_timestamp
+    dtype: datetime
+  - name: order_approved_at
+    dtype: datetime
+  - name: order_delivered_customer_date
+    dtype: datetime
+
+  

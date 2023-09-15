@@ -1,0 +1,15 @@
+entity_name: orders
+file_name: 'olist_orders_dataset.csv'
+columns:
+- column_name: order_id
+  is_in_index: true
+- column_name: order_status
+  dtype: category
+- column_name: order_purchase_timestamp
+  dtype: datetime64
+- column_name: order_approved_at
+  dtype: datetime64
+- column_name: order_delivered_customer_date
+  dtype: datetime64
+
+

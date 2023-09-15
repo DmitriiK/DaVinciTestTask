@@ -1,0 +1,8 @@
+input_dir: input_data
+output_dir: output_data
+metadata_dir: 'config_modules\metadata'
+# metadata file names
+orders_metadata_file: 'orders_metadata.yaml'
+order_items_metadata_file: 'order_items_metadata.yaml'
+products_metadata_file: 'products_metadata.yaml'
+order_payments_metadata_file: 'order_payments_metadata.yaml'

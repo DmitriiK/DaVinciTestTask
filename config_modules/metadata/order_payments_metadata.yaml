@@ -1,0 +1,13 @@
+entity_name: payments
+file_name: 'olist_order_payments_dataset.csv'
+columns:
+- column_name: order_id
+  is_in_index: true
+- column_name: payment_sequential
+  is_in_index: true
+  dtype: uint8
+- column_name: payment_value
+  dtype: float32
+
+
+
