@@ -1,6 +1,13 @@
-input_dir: input_data
-output_dir: output_data
-metadata_dir: 'config_modules\metadata'
+input_dir: input_data # path to source file
+output_dir: output_data # destination path
+metadata_dir: 'config_modules\metadata' #path to metadata file for each entity type
+
+## parameters affecting save to parquet  
+chunk_size: 100
+compression: snappy
+partitioning_columns:
+- product_id
+
 entity_type_configs:   
   order:
     metadata_file: orders_metadata.yaml   
