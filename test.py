@@ -2,10 +2,11 @@
 
 def dummy_test_passed():
     assert True
+    print ('passed')
 
 
 def dummy_test_failed():
-    assert False
+    assert False, 'shit happens'
 
 
 if __name__ == "__main__":
