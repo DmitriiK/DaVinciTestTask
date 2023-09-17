@@ -7,16 +7,14 @@ from save_output_data import save_to_parquet
 
 
 dc_help_str = """One of possible date attributes for group by.
-                    Kind of role-playing date dimension.
-                    Possible values:
-                    - order_purchase_timestamp
-                    - order_approved_at
-                    - order_delivered_customer_date"""
+                    Kind of role-playing date dimension."""
 parser = argparse.ArgumentParser()
 parser.add_argument("--date_column", type=str, help=dc_help_str,
+                    nargs='?',
+                    choices=['order_purchase_timestamp',
+                             'order_approved_at',
+                             'order_delivered_customer_date'],
                     default='order_purchase_timestamp')
-# TODO attach some validation here, like in
-# https://stackoverflow.com/questions/37471636/python-argument-parsing-validation-best-practices
 
 
 def main_steps():

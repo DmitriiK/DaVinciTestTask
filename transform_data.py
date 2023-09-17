@@ -6,7 +6,6 @@ import pandas as pd
 week_col = 'date_week_begin'
 gr_by_cols = ['product_id', "date_week_begin"]  # columns to group by
 aggr = ('price', 'sum')  # aggregation definitions
-gr_by_cols = ['date_week_begin', "product_id"]  # columns to group by
 
 
 def calculate_dfs(df_ord: pd.DataFrame,
