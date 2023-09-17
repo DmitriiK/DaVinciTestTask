@@ -1,10 +1,10 @@
 import pandas as pd
 
-import load_source_data as lsd
+import etl_modules.load_source_data as lsd
 from config_modules.metadata_classes import EntityTypes
 from config_modules.config_reader import ConfigReader
-from transform_data import join_dfs, aggr_df, calculate_dfs
-from save_output_data import save_to_parquet
+from etl_modules.transform_data import join_dfs, aggr_df, calculate_dfs
+from etl_modules.save_output_data import save_to_parquet
 
 
 def print_df_data(df: pd.DataFrame):

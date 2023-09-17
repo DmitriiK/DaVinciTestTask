@@ -1,9 +1,9 @@
 import argparse
 
-import load_source_data as lsd
+import etl_modules.load_source_data as lsd
 from config_modules.metadata_classes import EntityTypes
-from transform_data import calculate_dfs, join_dfs, aggr_df
-from save_output_data import save_to_parquet
+from etl_modules.transform_data import calculate_dfs, join_dfs, aggr_df
+from etl_modules.save_output_data import save_to_parquet
 
 
 dc_help_str = """One of possible date attributes for group by.
