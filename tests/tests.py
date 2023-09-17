@@ -3,7 +3,7 @@ import pandas as pd
 import load_source_data as lsd
 from config_modules.metadata_classes import EntityTypes
 from config_modules.config_reader import ConfigReader
-from aggregate_data import join_dfs, aggr_df
+from transform_data import join_dfs, aggr_df, calculate_dfs
 from save_output_data import save_to_parquet
 
 
@@ -26,6 +26,7 @@ def test_read_df():
 
 def test_join_df():
     df_ord = lsd.get_pandas_dataframe(EntityTypes.order)
+    calculate_dfs(df_ord)
     df_ord_itm = lsd.get_pandas_dataframe(EntityTypes.order_item)
     df = join_dfs(df_ord, df_ord_itm)
     print_df_data(df)

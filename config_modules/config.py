@@ -19,7 +19,7 @@ class Config(BaseModel):
     """kind of data class for application configuration"""
     input_dir: str = 'input_data'
     output_dir: str = "output_data"
-    metadata_dir: str = 'metadata'  
+    metadata_dir: str = 'metadata'
     """chunk size to write to parquet big dataframe"""
     chunk_size: int
     compression: CompressionTypes = CompressionTypes.snappy
