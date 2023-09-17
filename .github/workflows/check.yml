@@ -4,11 +4,7 @@ on: push
 
 jobs:
   unit-testing:
-<<<<<<< HEAD
     runs-on: windows-latest
-=======
-    runs-on: windows-latest  # ubuntu-latest
->>>>>>> ab54f4b4f5354f1b37b31584eb9dc1034ffbf917
     strategy:
       matrix:
         python-version: ["3.11"]
