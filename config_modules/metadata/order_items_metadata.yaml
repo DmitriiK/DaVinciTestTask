@@ -2,13 +2,13 @@ entity_name: order_items
 columns:
 - column_name: order_id
   is_in_index: true
-- column_name: order_status
-  dtype: category
-- column_name: order_purchase_timestamp
-  dtype: datetime64
-- column_name: order_approved_at
-  dtype: datetime64
-- column_name: order_delivered_customer_date
-  dtype: datetime64
+- column_name: order_item_id
+  dtype: uint8
+  is_in_index: true
+- column_name: product_id
+- column_name: price
+  dtype: float32
+
+
 
 

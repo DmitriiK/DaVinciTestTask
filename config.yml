@@ -7,7 +7,7 @@ entity_type_configs:
     source_data_file: olist_orders_dataset.csv
   order_item:
     metadata_file: order_items_metadata.yaml   
-    source_data_file: x
+    source_data_file: olist_order_items_dataset.csv
   order_payment:       
     metadata_file: order_payments_metadata.yaml   
     source_data_file: 'olist_order_payments_dataset.csv'
