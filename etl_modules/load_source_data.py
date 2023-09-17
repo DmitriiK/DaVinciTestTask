@@ -5,12 +5,14 @@ from config_modules.config_reader import ConfigReader
 from config_modules.metadata_classes import PandasDataType,  EntityTypes
 
 
-def get_pandas_dataframe(et: EntityTypes) -> pd.DataFrame:
+def get_pandas_dataframe(et: EntityTypes,
+                         src_file_path: str = None) -> pd.DataFrame:
     cr = ConfigReader()
     conf = cr.application_config
     src_file_name = conf.entity_type_configs[et].source_data_file
     mtd = cr.get_pandas_schema(et)
-    source_file_path = os.path.join(conf.input_dir, src_file_name)
+    source_file_path = (src_file_path or
+                        os.path.join(conf.input_dir, src_file_name))
     columns = [x.column_name for x in mtd.columns]
     columns_in_index = [x.column_name for x in mtd.columns if x.is_in_index]
     date_columns = [x.column_name for x in mtd.columns
