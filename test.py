@@ -9,7 +9,7 @@ def test_passed_dummy():
     print('passed')
 
 
-@pytest.mark.skip(reason="this test was make to ensure that fails of test work")
+@pytest.mark.skip(reason="test was make to ensure that fails of test work")
 def test_failed_dummy():
     assert False, 'shit happens'
 

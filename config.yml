@@ -1,6 +1,6 @@
 input_dir: input_data # path to source file
 output_dir: output_data # destination path
-metadata_dir: 'config_modules\metadata' #path to metadata file for each entity type,
+metadata_dir: "config_modules/metadata" #path to metadata file for each ent. type
 #  TODO - get rid of back slash to make it work both on windows and ubuntu
 
 ## parameters affecting save to parquet  
