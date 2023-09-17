@@ -1,5 +1,4 @@
 entity_name: products
-file_name: 'olist_products_dataset.csv'
 columns:
 - column_name: product_id
   is_in_index: true

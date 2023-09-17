@@ -21,7 +21,6 @@ class PandasColumn(BaseModel):
 
 class PandasSchema(BaseModel):
     entity_name: str
-    file_name: str
     columns: list[PandasColumn]
 
 

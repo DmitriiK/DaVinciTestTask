@@ -23,7 +23,7 @@ df_common = pd.merge(df_orders, pd.merge(df_oi, df_pr))
 print(df_common.info())
 print(df_common.head())
 
-df_aggr = df_common.groupby(["product_category_name",  'date_week_begin',"product_id"]).agg(sum_sales=('price', 'sum'))
+df_aggr = df_common.groupby(["product_category_name",  'date_week_begin', "product_id"]).agg(sum_sales=('price', 'sum'))
 
 print(df_aggr.info())
 print(df_aggr.head(100))
