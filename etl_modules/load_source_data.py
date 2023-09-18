@@ -7,6 +7,16 @@ from config_modules.metadata_classes import PandasDataType,  EntityTypes
 
 def get_pandas_dataframe(et: EntityTypes,
                          src_file_path: str = None) -> pd.DataFrame:
+    """_summary_
+
+    Args:
+        et (EntityTypes): Entity Type to load, Order, order_item, etc
+        src_file_path (str, optional): source file path.
+        Defaults to None, -means that path supposed to be taken from config
+
+    Returns:
+        pd.DataFrame: pandas dataframe from source file
+    """
     cr = ConfigReader()
     conf = cr.application_config
     src_file_name = conf.entity_type_configs[et].source_data_file

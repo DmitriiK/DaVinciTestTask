@@ -10,7 +10,7 @@ def test_read_orders_df():
     fn = path.join("tests", "input_data", "olist_orders_dataset.csv")
     print(f'- loading of data from {fn}')
     df = lsd.get_pandas_dataframe(EntityTypes.order, fn)
-    print(f'{df.shape=} got')
+    print(f'got dataframe with {df.shape=} ')
     expected = (24, 5)  # 24 rows, 5 columns
     ass_mess = f'{df.shape =} is not correct, expected {expected}'
     assert df.shape == expected, ass_mess
@@ -27,7 +27,7 @@ def test_passed_dummy():
     print('passed')
 
 
-@pytest.mark.skip(reason="test was make to ensure that fails of test work")
+@pytest.mark.skip(reason="test was made to ensure that fails of test work")
 def test_failed_dummy():
     assert False, 'shit happens'
 
