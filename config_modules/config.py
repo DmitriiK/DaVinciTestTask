@@ -1,3 +1,8 @@
+"""
+Data classes to store configuration data.
+Reflected in config.yaml file
+"""
+
 from pydantic import BaseModel  # , validator
 from enum import Enum
 from typing import Dict, List

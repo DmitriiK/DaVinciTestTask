@@ -1,5 +1,10 @@
 from enum import Enum
 from pydantic import BaseModel  # , validator
+"""
+    Data Classes for information about metadata, related to source files
+    Structures of the classes reflected in correspondent yaml files
+    for configurations
+"""
 
 
 class PandasDataType(str, Enum):

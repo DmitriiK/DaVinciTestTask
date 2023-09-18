@@ -1,3 +1,10 @@
+
+"""Main module of the application.
+`  Has date_column name  as command line argument
+     example of command line call :
+    - > python main.py --date_column order_approved_at
+    """
+
 import argparse
 
 import etl_modules.load_source_data as lsd
@@ -29,6 +36,4 @@ def main_steps():
 
 
 if __name__ == "__main__":
-    # example of command line call :
-    # - > python main.py --date_column order_approved_at
     main_steps()

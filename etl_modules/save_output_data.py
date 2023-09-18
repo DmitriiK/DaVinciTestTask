@@ -7,6 +7,12 @@ from config_modules.config_reader import ConfigReader
 
 
 def save_to_parquet(df: pd.DataFrame):
+    """Saving file to parquet format.
+    all parameters, directory, chunk size, compression type
+    supposed to be taken from config files.
+    Args:
+        df (pd.DataFrame): pandas df to save
+    """
     cr = ConfigReader()
     conf: Config = cr.application_config
     df.reset_index(inplace=True)
