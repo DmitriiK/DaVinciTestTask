@@ -65,7 +65,7 @@ configuration files for source metadata, list of columns to read and types of co
   --_save_output_data.py_ : is responsible for saving to parquet, using "chunk" logic.
 - /tests: some code for manual development testing
 - _/tests/input_data_ : subset of kaggle datasets data for testing
-- _/test.py _:  tests for automated testing using GitHub actions
+- _/test.py_:  tests for automated testing using GitHub actions
 - _/.githu/workflows/check.yml_ : config for git hub actions
 ### External libraries, worth mentioning about
 - [pydantic](https://docs.pydantic.dev) - data classes, that for my implementation used to make the work with config files more convenient, and to provide validation for config data
