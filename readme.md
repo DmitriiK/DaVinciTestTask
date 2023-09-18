@@ -63,7 +63,7 @@ configuration files for source metadata, list of columns to read and types of co
   --_load_source_data.py_ : extracts data from .csv to data frame,\
   --_transform_data.py_ : makes joins and aggregations,\
   --_save_output_data.py_ : is responsible for saving to parquet, using "chunk" logic.
-- /tests: some code for manual development testing
+- _/tests_ : some code for manual development testing
 - _/tests/input_data_ : subset of kaggle datasets data for testing
 - _/test.py_:  tests for automated testing using GitHub actions
 - _/.githu/workflows/check.yml_ : config for git hub actions
