@@ -59,8 +59,11 @@ As we are not sure,  which of the date attributes from [orders] entity a user mi
 - _/config_modules_: contains pydantic (kind of data-classes) classes, related to configuration files and config_reader.py model with ConfigReader class (wanted to make it a singleton instance, but then decided to keep it a bit simpler) \
 - _/config_modules/metadate/<enity_type**>metadata.yaml_ :
 configuration files for source metadata, list of columns to read and types of column (trying to do pandas dataframes as narrow as possible)
-- _/etl_modules_ : main workers of ETL, load_source_data.py extracts data from .csv to data frame. transform_data.py makes joins and aggregations, save_output_data.py is responsible for saving to parquet, using "chunk" logic.
-tests: some code for manual development testing
+- _/etl_modules_ : main workers of ETL:\
+  --_load_source_data.py_ : extracts data from .csv to data frame,\
+  --_transform_data.py_ : makes joins and aggregations,\
+  --_save_output_data.py_ : is responsible for saving to parquet, using "chunk" logic.
+- /tests: some code for manual development testing
 - _/tests/input_data_ : subset of kaggle datasets data for testing
 - _/test.py _:  tests for automated testing using GitHub actions
 - _/.githu/workflows/check.yml_ : config for git hub actions
